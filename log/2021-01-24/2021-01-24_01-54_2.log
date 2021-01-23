@@ -1,0 +1,97 @@
+2021-01-24 01:54:12 [Thread-2] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=3, capacity=150, load=50, cargoType=STANDARD} got Terminal{id=5}
+2021-01-24 01:54:12 [Thread-4] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=5, capacity=100, load=80, cargoType=STANDARD} stays in the queue
+2021-01-24 01:54:12 [Thread-8] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=9, capacity=100, load=0, cargoType=PERISHABLE} stays in the queue
+2021-01-24 01:54:12 [Thread-1] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=2, capacity=150, load=40, cargoType=PERISHABLE} stays in the queue
+2021-01-24 01:54:12 [Thread-3] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=4, capacity=150, load=0, cargoType=PERISHABLE} stays in the queue
+2021-01-24 01:54:13 [Thread-6] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=7, capacity=100, load=0, cargoType=STANDARD} was unloaded on Terminal{id=4}
+2021-01-24 01:54:13 [Thread-6] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=7, capacity=100, load=0, cargoType=STANDARD} left the Terminal{id=4}
+2021-01-24 01:54:13 [Thread-4] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=5, capacity=100, load=80, cargoType=STANDARD} got Terminal{id=4}
+2021-01-24 01:54:13 [Thread-5] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=6, capacity=50, load=50, cargoType=PERISHABLE} was loaded on Terminal{id=3}
+2021-01-24 01:54:13 [Thread-5] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=6, capacity=50, load=50, cargoType=PERISHABLE} left the Terminal{id=3}
+2021-01-24 01:54:13 [Thread-8] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=9, capacity=100, load=0, cargoType=PERISHABLE} got Terminal{id=3}
+2021-01-24 01:54:13 [Thread-2] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=3, capacity=150, load=0, cargoType=STANDARD} was unloaded on Terminal{id=5}
+2021-01-24 01:54:13 [Thread-2] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=3, capacity=150, load=0, cargoType=STANDARD} left the Terminal{id=5}
+2021-01-24 01:54:13 [Thread-1] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=2, capacity=150, load=40, cargoType=PERISHABLE} got Terminal{id=5}
+2021-01-24 01:54:14 [Thread-1] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=2, capacity=150, load=0, cargoType=PERISHABLE} was unloaded on Terminal{id=5}
+2021-01-24 01:54:14 [Thread-1] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=2, capacity=150, load=0, cargoType=PERISHABLE} left the Terminal{id=5}
+2021-01-24 01:54:14 [Thread-3] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=4, capacity=150, load=0, cargoType=PERISHABLE} got Terminal{id=5}
+2021-01-24 01:54:14 [Thread-0] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=1, capacity=100, load=100, cargoType=STANDARD} was loaded on Terminal{id=1}
+2021-01-24 01:54:14 [Thread-0] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=1, capacity=100, load=100, cargoType=STANDARD} left the Terminal{id=1}
+2021-01-24 01:54:15 [Thread-4] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=5, capacity=100, load=0, cargoType=STANDARD} was unloaded on Terminal{id=4}
+2021-01-24 01:54:15 [Thread-4] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=5, capacity=100, load=0, cargoType=STANDARD} left the Terminal{id=4}
+2021-01-24 01:54:15 [Thread-7] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=8, capacity=150, load=0, cargoType=STANDARD} was unloaded on Terminal{id=2}
+2021-01-24 01:54:15 [Thread-7] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=8, capacity=150, load=0, cargoType=STANDARD} left the Terminal{id=2}
+2021-01-24 01:54:16 [Thread-8] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=9, capacity=100, load=100, cargoType=PERISHABLE} was loaded on Terminal{id=3}
+2021-01-24 01:54:16 [Thread-8] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=9, capacity=100, load=100, cargoType=PERISHABLE} left the Terminal{id=3}
+2021-01-24 01:54:18 [Thread-3] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=4, capacity=150, load=150, cargoType=PERISHABLE} was loaded on Terminal{id=5}
+2021-01-24 01:54:18 [Thread-3] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=4, capacity=150, load=150, cargoType=PERISHABLE} left the Terminal{id=5}
+2021-01-24 01:54:26 [main] INFO  epam.multithreading.reader.impl.TruckReaderImpl - Lines were read
+2021-01-24 01:54:26 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=1, capacity=100, load=0, cargoType=STANDARD}
+2021-01-24 01:54:26 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=2, capacity=150, load=40, cargoType=PERISHABLE}
+2021-01-24 01:54:26 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=3, capacity=150, load=50, cargoType=STANDARD}
+2021-01-24 01:54:26 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=4, capacity=150, load=0, cargoType=PERISHABLE}
+2021-01-24 01:54:26 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=5, capacity=100, load=80, cargoType=STANDARD}
+2021-01-24 01:54:26 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=6, capacity=50, load=0, cargoType=PERISHABLE}
+2021-01-24 01:54:26 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=7, capacity=100, load=40, cargoType=STANDARD}
+2021-01-24 01:54:26 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=8, capacity=150, load=140, cargoType=STANDARD}
+2021-01-24 01:54:26 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=9, capacity=100, load=0, cargoType=PERISHABLE}
+2021-01-24 01:54:26 [Thread-0] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=1, capacity=100, load=0, cargoType=STANDARD} stays in the queue
+2021-01-24 01:54:26 [Thread-0] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=1, capacity=100, load=0, cargoType=STANDARD} got Terminal{id=1}
+2021-01-24 01:54:26 [Thread-8] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=9, capacity=100, load=0, cargoType=PERISHABLE} stays in the queue
+2021-01-24 01:54:26 [Thread-8] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=9, capacity=100, load=0, cargoType=PERISHABLE} got Terminal{id=2}
+2021-01-24 01:54:26 [Thread-7] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=8, capacity=150, load=140, cargoType=STANDARD} stays in the queue
+2021-01-24 01:54:26 [Thread-7] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=8, capacity=150, load=140, cargoType=STANDARD} got Terminal{id=3}
+2021-01-24 01:54:26 [Thread-5] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=6, capacity=50, load=0, cargoType=PERISHABLE} stays in the queue
+2021-01-24 01:54:26 [Thread-5] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=6, capacity=50, load=0, cargoType=PERISHABLE} got Terminal{id=4}
+2021-01-24 01:54:26 [Thread-1] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=2, capacity=150, load=40, cargoType=PERISHABLE} stays in the queue
+2021-01-24 01:54:26 [Thread-1] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=2, capacity=150, load=40, cargoType=PERISHABLE} got Terminal{id=5}
+2021-01-24 01:54:26 [Thread-3] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=4, capacity=150, load=0, cargoType=PERISHABLE} stays in the queue
+2021-01-24 01:54:26 [Thread-6] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=7, capacity=100, load=40, cargoType=STANDARD} stays in the queue
+2021-01-24 01:54:26 [Thread-4] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=5, capacity=100, load=80, cargoType=STANDARD} stays in the queue
+2021-01-24 01:54:26 [Thread-2] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=3, capacity=150, load=50, cargoType=STANDARD} stays in the queue
+2021-01-24 01:54:27 [Thread-1] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=2, capacity=150, load=0, cargoType=PERISHABLE} was unloaded on Terminal{id=5}
+2021-01-24 01:54:27 [Thread-1] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=2, capacity=150, load=0, cargoType=PERISHABLE} left the Terminal{id=5}
+2021-01-24 01:54:27 [Thread-3] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=4, capacity=150, load=0, cargoType=PERISHABLE} got Terminal{id=5}
+2021-01-24 01:54:27 [Thread-5] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=6, capacity=50, load=50, cargoType=PERISHABLE} was loaded on Terminal{id=4}
+2021-01-24 01:54:27 [Thread-5] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=6, capacity=50, load=50, cargoType=PERISHABLE} left the Terminal{id=4}
+2021-01-24 01:54:27 [Thread-6] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=7, capacity=100, load=40, cargoType=STANDARD} got Terminal{id=4}
+2021-01-24 01:54:28 [Thread-6] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=7, capacity=100, load=0, cargoType=STANDARD} was unloaded on Terminal{id=4}
+2021-01-24 01:54:28 [Thread-6] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=7, capacity=100, load=0, cargoType=STANDARD} left the Terminal{id=4}
+2021-01-24 01:54:28 [Thread-4] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=5, capacity=100, load=80, cargoType=STANDARD} got Terminal{id=4}
+2021-01-24 01:54:28 [Thread-0] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=1, capacity=100, load=100, cargoType=STANDARD} was loaded on Terminal{id=1}
+2021-01-24 01:54:28 [Thread-0] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=1, capacity=100, load=100, cargoType=STANDARD} left the Terminal{id=1}
+2021-01-24 01:54:28 [Thread-2] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=3, capacity=150, load=50, cargoType=STANDARD} got Terminal{id=1}
+2021-01-24 01:54:28 [Thread-8] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=9, capacity=100, load=100, cargoType=PERISHABLE} was loaded on Terminal{id=2}
+2021-01-24 01:54:28 [Thread-8] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=9, capacity=100, load=100, cargoType=PERISHABLE} left the Terminal{id=2}
+2021-01-24 01:54:29 [Thread-7] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=8, capacity=150, load=0, cargoType=STANDARD} was unloaded on Terminal{id=3}
+2021-01-24 01:54:29 [Thread-7] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=8, capacity=150, load=0, cargoType=STANDARD} left the Terminal{id=3}
+2021-01-24 01:54:29 [Thread-2] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=3, capacity=150, load=0, cargoType=STANDARD} was unloaded on Terminal{id=1}
+2021-01-24 01:54:29 [Thread-2] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=3, capacity=150, load=0, cargoType=STANDARD} left the Terminal{id=1}
+2021-01-24 01:54:30 [Thread-4] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=5, capacity=100, load=0, cargoType=STANDARD} was unloaded on Terminal{id=4}
+2021-01-24 01:54:30 [Thread-4] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=5, capacity=100, load=0, cargoType=STANDARD} left the Terminal{id=4}
+2021-01-24 01:54:30 [Thread-3] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=4, capacity=150, load=150, cargoType=PERISHABLE} was loaded on Terminal{id=5}
+2021-01-24 01:54:30 [Thread-3] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=4, capacity=150, load=150, cargoType=PERISHABLE} left the Terminal{id=5}
+2021-01-24 01:54:38 [main] INFO  epam.multithreading.reader.impl.TruckReaderImpl - Lines were read
+2021-01-24 01:54:38 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=1, capacity=100, load=0, cargoType=STANDARD}
+2021-01-24 01:54:38 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=2, capacity=150, load=40, cargoType=PERISHABLE}
+2021-01-24 01:54:38 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=3, capacity=150, load=50, cargoType=STANDARD}
+2021-01-24 01:54:38 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=4, capacity=150, load=0, cargoType=PERISHABLE}
+2021-01-24 01:54:38 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=5, capacity=100, load=80, cargoType=STANDARD}
+2021-01-24 01:54:38 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=6, capacity=50, load=0, cargoType=PERISHABLE}
+2021-01-24 01:54:38 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=7, capacity=100, load=40, cargoType=STANDARD}
+2021-01-24 01:54:38 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=8, capacity=150, load=140, cargoType=STANDARD}
+2021-01-24 01:54:38 [main] INFO  epam.multithreading.parser.impl.TruckParserImpl - Truck parsed: Truck{id=9, capacity=100, load=0, cargoType=PERISHABLE}
+2021-01-24 01:54:38 [Thread-0] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=1, capacity=100, load=0, cargoType=STANDARD} stays in the queue
+2021-01-24 01:54:39 [Thread-0] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=1, capacity=100, load=0, cargoType=STANDARD} got Terminal{id=1}
+2021-01-24 01:54:39 [Thread-7] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=8, capacity=150, load=140, cargoType=STANDARD} stays in the queue
+2021-01-24 01:54:39 [Thread-7] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=8, capacity=150, load=140, cargoType=STANDARD} got Terminal{id=2}
+2021-01-24 01:54:39 [Thread-6] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=7, capacity=100, load=40, cargoType=STANDARD} stays in the queue
+2021-01-24 01:54:39 [Thread-6] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=7, capacity=100, load=40, cargoType=STANDARD} got Terminal{id=3}
+2021-01-24 01:54:39 [Thread-3] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=4, capacity=150, load=0, cargoType=PERISHABLE} stays in the queue
+2021-01-24 01:54:39 [Thread-3] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=4, capacity=150, load=0, cargoType=PERISHABLE} got Terminal{id=4}
+2021-01-24 01:54:39 [Thread-2] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=3, capacity=150, load=50, cargoType=STANDARD} stays in the queue
+2021-01-24 01:54:39 [Thread-4] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=5, capacity=100, load=80, cargoType=STANDARD} stays in the queue
+2021-01-24 01:54:40 [Thread-1] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=2, capacity=150, load=40, cargoType=PERISHABLE} stays in the queue
+2021-01-24 01:54:40 [Thread-8] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=9, capacity=100, load=0, cargoType=PERISHABLE} stays in the queue
+2021-01-24 01:54:40 [Thread-6] INFO  edu.epam.multithreading.entity.Terminal - Truck{id=7, capacity=100, load=0, cargoType=STANDARD} was unloaded on Terminal{id=3}
+2021-01-24 01:54:40 [Thread-5] INFO  edu.epam.multithreading.entity.LogisticCentre - Truck{id=6, capacity=50, load=0, cargoType=PERISHABLE} stays in the queue

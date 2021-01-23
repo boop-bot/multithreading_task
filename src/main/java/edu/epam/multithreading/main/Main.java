@@ -20,7 +20,7 @@ public class Main {
         for (String data : truckData) {
             trucks.add(parser.parse(data));
         }
-        for(Truck truck : trucks){
+        for (Truck truck : trucks){
             new Thread(truck).start();
         }
     }

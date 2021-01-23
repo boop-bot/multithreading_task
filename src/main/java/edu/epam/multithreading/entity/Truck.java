@@ -1,7 +1,6 @@
 package edu.epam.multithreading.entity;
 
 import edu.epam.multithreading.exception.ResourceException;
-import edu.epam.multithreading.parser.impl.TruckParserImpl;
 import edu.epam.multithreading.util.IdGenerator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -86,6 +85,4 @@ public class Truck implements Runnable {
         sb.append('}');
         return sb.toString();
     }
-
-
 }

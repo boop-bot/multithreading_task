@@ -13,10 +13,10 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class LogisticCentre {
     private static final int TERMINALS_AMOUNT = 5;
-    private List<Terminal> terminals = new ArrayList<>();
+    private final Queue<Terminal> terminals = new LinkedList<>();
     private Queue<Truck> trucksOutsideCenter = new PriorityQueue<>(new TruckComparator());
     private static final Semaphore semaphore = new Semaphore(TERMINALS_AMOUNT,true);
-    private Lock lock = new ReentrantLock();
+    private static final Lock lock = new ReentrantLock();
     private static final LogisticCentre instance = new LogisticCentre();
     private static final Logger logger = LogManager.getLogger(LogisticCentre.class);
 
@@ -27,23 +27,25 @@ public class LogisticCentre {
     }
 
     public static LogisticCentre getInstance() {
-        return instance;
+        lock.lock();
+        try {
+            return instance;
+        } finally {
+            lock.unlock();
+        }
     }
 
     public Terminal getTerminal(Truck truck) throws ResourceException {
-        Terminal terminal;
         try {
             semaphore.acquire();
             lock.lock();
-            Optional<Terminal> optional = terminals.stream().filter(o -> !o.isBusy()).findAny();
-            terminal = optional.get();
+            Terminal terminal = terminals.poll();
             trucksOutsideCenter.remove(truck);
-            terminal.setBusy(true);
             logger.info(truck + " got "+ terminal);
             return terminal;
         } catch (InterruptedException e) {
             logger.error(e);
-        }finally {
+        } finally {
             lock.unlock();
         }
         throw new ResourceException();
@@ -52,7 +54,7 @@ public class LogisticCentre {
     public void returnTerminal(Truck truck, Terminal terminal) {
         try {
             lock.lock();
-            terminal.setBusy(false);
+            terminals.add(terminal);
             logger.info(truck + " left the " + terminal);
         } finally {
             lock.unlock();
