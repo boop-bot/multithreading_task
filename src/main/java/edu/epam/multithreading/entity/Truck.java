@@ -1,5 +1,6 @@
 package edu.epam.multithreading.entity;
 
+import edu.epam.multithreading.exception.ResourceException;
 import edu.epam.multithreading.parser.impl.TruckParserImpl;
 import edu.epam.multithreading.util.IdGenerator;
 import org.apache.logging.log4j.LogManager;
@@ -63,7 +64,16 @@ public class Truck implements Runnable {
 
     @Override
     public void run() {
-
+        LogisticCentre logisticCentre = LogisticCentre.getInstance();
+        logisticCentre.moveTruckNearCenter(this);
+        try {
+            Terminal terminal;
+            terminal = logisticCentre.getTerminal(this);
+            terminal.serve(this);
+            logisticCentre.returnTerminal(this,terminal);
+        } catch (ResourceException e) {
+            logger.error(e);
+        }
     }
 
     @Override
